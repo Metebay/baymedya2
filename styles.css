@@ -1,0 +1,153 @@
+:root {
+    --primary-color: #ff6f61; /* Canlı mercan rengi */
+    --secondary-color: #2a9d8f; /* Teal rengi */
+    --accent-color: #264653; /* Koyu mavi-gri rengi */
+    --bg-color: #f1faee; /* Açık gri */
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    background-color: var(--bg-color);
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: #333; /* Koyu gri arka plan rengi */
+    color: white;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.header-logo {
+    width: 200px; /* Logonun genişliğini ayarlayın */
+    height: auto; /* Orantılı yükseklik için otomatik ayarlama */
+}
+
+/* Banner */
+.banner {
+    height: 400px;
+    background-image: url('banner-image.jpg'); /* Banner arka planı */
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.banner-content {
+    color: white;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+
+.banner-content h1 {
+    font-size: 48px;
+    margin: 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.banner-content p {
+    font-size: 24px;
+    margin: 20px 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.cta-button {
+    background-color: var(--secondary-color);
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: 600;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: var(--accent-color);
+}
+
+/* Hakkımızda Bölümü */
+.about-section {
+    padding: 40px 20px;
+    text-align: center;
+    background: var(--secondary-color);
+    color: white;
+}
+
+/* Hizmetler Bölümü */
+.services-section {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.services {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.service-box {
+    background-color: white;
+    border: 2px solid var(--primary-color); /* Renkli kenarlık */
+    border-radius: 12px; /* Yuvarlak köşeler */
+    padding: 20px;
+    margin: 10px;
+    width: 220px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Yumuşak gölge efekti */
+    transition: transform 0.3s, box-shadow 0.3s; /* Hover efekti */
+}
+
+.service-box:hover {
+    transform: translateY(-5px); /* Hover etkisi ile yukarı kaldırma */
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2); /* Daha belirgin gölge */
+}
+
+.service-box h3 {
+    color: var(--primary-color);
+    margin-bottom: 10px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: var(--accent-color);
+    color: white;
+}
+
+/* Sosyal Medya */
+.social-media {
+    position: fixed; /* İkonların konumunu sabitliyoruz */
+    bottom: 20px; /* Alt kenara olan mesafe */
+    right: 20px; /* Sağ kenara olan mesafe */
+    display: flex;
+    gap: 10px; /* İkonlar arasındaki mesafe */
+    z-index: 1000; /* Diğer elemanların üstünde görünmesini sağlamak için */
+}
+
+.social-icon-container {
+    background-color:#333; /* Kutunun arka plan rengi (beyaz, yarı saydam) */
+    border-radius: 8px; /* Köşeleri yuvarlak yapmak için */
+    padding: 10px; /* İçerik ile kenarlar arasındaki boşluk */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Gölge efekti */
+    transition: transform 0.3s, box-shadow 0.3s; /* Hover efekti için geçiş */
+}
+
+.social-icon-container:hover {
+    transform: scale(1.1); /* Hover efekti ile büyütme */
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3); /* Hover sırasında gölgenin artırılması */
+}
+
+.social-icon {
+    width: 40px; /* İkon boyutu */
+}
