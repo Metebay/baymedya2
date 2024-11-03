@@ -21,6 +21,24 @@ header {
     background-color: #333; /* Koyu gri arka plan rengi */
     color: white;
 }
+.language-switcher {
+    display: flex;
+    gap: 10px;
+    font-weight: 600;
+}
+
+.language-switcher a {
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.language-switcher a:hover {
+    background-color: #555;
+}
+
 
 .logo-container {
     display: flex;
@@ -138,7 +156,7 @@ footer {
 .social-icon-container {
     background-color:#333; /* Kutunun arka plan rengi (beyaz, yarı saydam) */
     border-radius: 8px; /* Köşeleri yuvarlak yapmak için */
-    padding: 10px; /* İçerik ile kenarlar arasındaki boşluk */
+    padding: 5px; /* İçerik ile kenarlar arasındaki boşluk */
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Gölge efekti */
     transition: transform 0.3s, box-shadow 0.3s; /* Hover efekti için geçiş */
 }
@@ -149,5 +167,5 @@ footer {
 }
 
 .social-icon {
-    width: 40px; /* İkon boyutu */
+    width: 30px; /* İkon boyutu */
 }
